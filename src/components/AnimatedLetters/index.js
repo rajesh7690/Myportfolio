@@ -10,7 +10,7 @@ const AnimatedLetters = ({ letterClass, str, idx }) => {
         wordIdx += 1;
         if (wordIdx < strArray.length-1) word = word+' ';
         return (
-          <span key={word+wordIdx} className="text-animate-wrapper">
+          <span key={word+wordIdx} className="text-animate-wrapper" aria-hidden="true">
             {word.split('').map(char => {
               i += 1
               return (

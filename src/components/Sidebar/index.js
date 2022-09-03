@@ -14,7 +14,7 @@ const Sidebar = ()=>(
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <img src={LogoS} alt="logo" />
-            <img className='sub-logo' src={LogoSubtitle} alt="Slobodon" />
+            <img className='sub-logo' src={LogoSubtitle} alt="Rajesh" />
         </Link>
         <nav>
         <NavLink exact="true" activeclassname="active" to="/">
@@ -31,8 +31,8 @@ const Sidebar = ()=>(
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
-      <ul>
-        <li>
+      <ul aria-label='social media links'>
+        <li aria-label='Linkedin'>
           <a
             href="https://www.linkedin.com/in/rajesh-kumar-sahu-3674371a2"
             target="_blank"
@@ -41,7 +41,7 @@ const Sidebar = ()=>(
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
-        <li>
+        <li aria-label='Github'>
           <a
             href="https://github.com/rajesh7690"
             target="_blank"
@@ -50,7 +50,7 @@ const Sidebar = ()=>(
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
-        <li>
+        <li aria-label='Youtube'>
           <a
             href="https://www.youtube.com/channel/UCVj3pYTGdoi3Tc9SF5AM1fA"
             rel="noreferrer"
@@ -59,7 +59,7 @@ const Sidebar = ()=>(
             <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
           </a>
         </li>
-        <li>
+        <li aria-label='Skype'>
           <a href="https://secure.skype.com/portal/overview" rel="noreferrer" target="_blank">
             <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
           </a>
