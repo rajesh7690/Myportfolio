@@ -1,30 +1,18 @@
-
 .logo-container {
     z-index: -1;
-    width: 400px;
-    height: 689px;
+    width: max(20rem, 40vw);
+    height: max(40rem, 90vh);
     position: fixed;
     top: 0;
     right: 15%;
-    bottom: 0;
-    left: auto;
-    margin: auto;
     animation: fadeIn 3s 1.8s backwards;
     animation-delay: 1.7s;
     .solid-logo {
-            position: absolute;
-            top: 20px;
-            right: auto;
-            bottom: auto;
-            left: 0;
-            margin: auto;
-            width: 100%;
-            height: 100%;
-            animation: fadeIn 1s 1.8s backwards;
-            animation-delay: 1.7s;
-            opacity: 10%;
-            transform: rotate(-20deg);
-            z-index: 1;
-            
-        }
+        width: 100%;
+        height: 100%;
+        animation: fadeIn 1s 1.8s backwards;
+        animation-delay: 1.7s;
+        opacity: 10% !important;
+        transform: rotate(-20deg);
+    }
 }
