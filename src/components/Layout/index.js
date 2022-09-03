@@ -1,9 +1,9 @@
 import './index.scss';
 import Sidebar from '../Sidebar';
 import { Outlet } from 'react-router-dom';
-const Layout =()=>{
-   return (
-      <div className="App">
+const Layout = () => {
+  return (
+    <div className="container2">
       <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
@@ -16,6 +16,6 @@ const Layout =()=>{
         </span>
       </div>
     </div>
-   )
+  )
 }
 export default Layout;
