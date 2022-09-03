@@ -1,71 +1,76 @@
 .home-page {
   h1 {
     position: relative;
-    color: #fff;
-    font-size: 56px;
-    line-height: 53px;
-    margin: 0;
+    display: inline-block;
+    color: var(--text2);
+    font-size: 2rem;
+    line-height: 1.2;
     font-family: "Coolvetica";
     font-weight: 400;
 
+    @media screen and (min-width: 50em) {
+      font-size: 4rem;
+    }
+
     &:before {
       content: "<h1>";
-      font-family: "La Belle Aurore", cursive;
-      color: #ffd700;
-      font-size: 18px;
       position: absolute;
-      margin-top: -40px;
-      left: -15px;
+      color: var(--text4);
+      font-family: "La Belle Aurore", cursive;
+      font-size: 1.25rem;
+      margin-top: -1em;
+      left: -1em;
       opacity: 0.6;
     }
 
     &:after {
       content: "<h1/>";
-      font-family: "La Belle Aurore", cursive;
-      color: #ffd700;
-      font-size: 18px;
       position: absolute;
-      margin-top: 18px;
-      margin-left: 20px;
+      font-family: "La Belle Aurore", cursive;
+      color: var(--text4);
+      font-size: 1.25rem;
+      bottom: 0;
+      right: -2.5em;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
     }
+
     img {
       display: inline;
-      margin-left: 20px;
+      margin-left: 0.3em;
       opacity: 0;
-      width: 32px;
+      width: 0.5em;
       height: auto;
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
     }
   }
   h2 {
-    color: #8d8d8d;
-    margin-top: 20px;
+    color: var(--text1);
+    margin-top: 2em;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 0.8rem;
     font-family: sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     animation: fadeIn 1s 1.8s backwards;
   }
   .flat-button {
-    color: #ffd700;
-    font-size: 13px;
-    font-weight: 400;
+    color: var(--text4);
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 2px solid var(--text4);
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-      background: #ffd700;
-      color: #333;
+      background: var(--clr-secondary-500);
+      color: var(--clr-primary-900);
     }
   }
 }
