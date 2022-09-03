@@ -36,9 +36,10 @@ const Contact = () =>{
         <div className='container contact-page'>
             <div className='text-zone'>
                 <h1>
-                    <AnimatedLetters strArray={['C','o','n','t','a','c','t',' ','m','e']}
-                    letterClass={letterClass}
-                    idx={15}
+                    <AnimatedLetters
+                        str='Contact me'
+                        letterClass={letterClass}
+                        idx={15}
                     />
                 </h1>
                 <p>
@@ -82,15 +83,15 @@ const Contact = () =>{
                     </form>
                 </div>
             </div>
-            <div className='info-map'>
-                Rajesh Sahu,
-                <br />
-                Odisha,India
-                <br />
-                Remuna,Balasore <br />
-                <span>rajeshsahu7683995090@gmail.com</span>
-            </div>
             <div className='map-wrap'>
+                <div className='info-map'>
+                    Rajesh Sahu,
+                    <br />
+                    Odisha,India
+                    <br />
+                    Remuna,Balasore <br />
+                    <span>rajeshsahu7683995090@gmail.com</span>
+                </div>
                 <MapContainer center={[21.525664, 86.868740]} zoom={13} scrollWheelZoom={false}>
                     <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

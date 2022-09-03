@@ -1,3 +1,13 @@
+.contact-page {
+    display: flex;
+    gap: 3rem;
+    height: 100%;
+
+    .text-zone {
+        width: 70%;
+    }
+}
+
 .contact-form {
     width: 100%;
     margin-top: 20px;
@@ -74,10 +84,9 @@
 .info-map {
     position: absolute;
     background: #000;
-    top: 50px;
-    right: 30%;
+    top: -3rem;
+    left: 6rem;
     z-index: 999999;
-    width: 267px;
     padding: 20px;
     color: #fff;
     font-family: 'Helvetica';
@@ -96,9 +105,10 @@
 }
 
 .map-wrap {
+    display: block;
+    position: relative;
     background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
+    width: 100%;
     height: 100%;
 }
 .leaflet-container {
