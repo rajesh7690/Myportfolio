@@ -15,10 +15,10 @@ const About = () =>{
         <>
         <div className='container about-page'>
             <div className='text-zone'>
-                <h1>
+                <h1 aria-label='About me'>
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={['A','b','o','u','t',' ','m','e' ]}
+                        str='About me'
                         idx={15}
                     />
                 </h1>
@@ -27,7 +27,7 @@ const About = () =>{
                     established IT company with the opportunity to work with the latest
                     technologies on challenging and diverse projects.
                 </p>
-                <p align="LEFT">
+                <p>
                     I'm quietly confident, naturally curious, and perpetually working on
                     improving my chops one design problem at a time.
                 </p>
@@ -37,9 +37,6 @@ const About = () =>{
                     photography and videography enthusiast, youtuber and tech-obsessed!!!
                 </p>
 
-            </div>
-            <div>
-                <span class="content"></span>
             </div>
         </div>
         <Loader type="pacman"/>

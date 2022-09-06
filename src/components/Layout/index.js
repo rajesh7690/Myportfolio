@@ -1,21 +1,22 @@
 import './index.scss';
 import Sidebar from '../Sidebar';
 import { Outlet } from 'react-router-dom';
-const Layout =()=>{
-   return (
-      <div className="App">
+const Layout = () => {
+  return (
+    <div className="layout-container">
       <Sidebar />
       <div className="page">
-        <span className="tags top-tags">&lt;body&gt;</span>
-
+        <div className="tags top-tags" aria-hidden="true">
+          <span className="tag-body">&lt;/body&gt;</span>
+        </div>
         <Outlet />
-        <span className="tags bottom-tags">
-          &lt;/body&gt;
+        <div className="tags bottom-tags" aria-hidden="true">
+          <span className="tag-body">&lt;/body&gt;</span>
           <br />
-          <span className="bottom-tag-html">&lt;/html&gt;</span>
-        </span>
+          <span>&lt;/html&gt;</span>
+        </div>
       </div>
     </div>
-   )
+  )
 }
 export default Layout;
