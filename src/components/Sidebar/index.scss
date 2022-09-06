@@ -8,6 +8,7 @@
     grid-template-rows: repeat(3, 1fr);
     .logo {
         padding-block-start: 0.5rem;
+        align-self: flex-start;
         img {
             margin: 0.5rem auto;
             width: 1.5rem;
