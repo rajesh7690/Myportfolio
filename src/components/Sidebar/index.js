@@ -10,6 +10,7 @@ import {
   faYoutube,
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
+import ThemeSwitch from '../ThemeSwitch';
 const Sidebar = ()=>(
     <div className='nav-bar'>
         <Link className='logo' to='/'>
@@ -65,6 +66,9 @@ const Sidebar = ()=>(
           </a>
         </li>
       </ul>
+      <div className='theme-switch-container'>
+        <ThemeSwitch />
+      </div>
     </div>
 )
 export default Sidebar;

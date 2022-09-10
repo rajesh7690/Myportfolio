@@ -1,15 +1,116 @@
-html {
+:root {
+  --clr-primary-100: hsl(201 94% 94%);
+  --clr-primary-200: hsl(201 94% 84%);
+  --clr-primary-300: hsl(201 94% 74%);
+  --clr-primary-400: hsl(201 94% 64%);
+  --clr-primary-500: hsl(201 94% 54%);
+  --clr-primary-600: hsl(201 94% 44%);
+  --clr-primary-700: hsl(201 94% 34%);
+  --clr-primary-800: hsl(201 94% 24%);
+  --clr-primary-900: hsl(201 94% 14%);
+
+  --clr-secondary-100: hsl(51 100% 90%);
+  --clr-secondary-200: hsl(51 100% 80%);
+  --clr-secondary-300: hsl(51 100% 70%);
+  --clr-secondary-400: hsl(51 100% 60%);
+  --clr-secondary-500: hsl(51 100% 50%);
+  --clr-secondary-600: hsl(51 100% 40%);
+  --clr-secondary-700: hsl(51 100% 30%);
+  --clr-secondary-800: hsl(51 100% 20%);
+  --clr-secondary-900: hsl(51 100% 10%);
+
+  --clr-neutral-100: hsl(0 0% 92%);
+  --clr-neutral-200: hsl(0 0% 82%);
+  --clr-neutral-300: hsl(0 0% 72%);
+  --clr-neutral-400: hsl(0 0% 62%);
+  --clr-neutral-500: hsl(0 0% 52%);
+  --clr-neutral-600: hsl(0 0% 42%);
+  --clr-neutral-700: hsl(0 0% 32%);
+  --clr-neutral-800: hsl(0 0% 22%);
+  --clr-neutral-900: hsl(0 0% 12%);
+
+  --surface1-light: var(--clr-primary-100);
+  --surface1-dark: var(--clr-primary-900);
+
+  --surface2-light: var(--clr-primary-200);
+  --surface2-dark: var(--clr-primary-800);
+
+  --surface3-light: var(--clr-primary-300);
+  --surface3-dark: var(--clr-primary-700);
+
+  --surface4-light: var(--clr-primary-400);
+  --surface4-dark: var(--clr-primary-600);
+
+  --text1-light: var(--clr-neutral-900);
+  --text1-dark: var(--clr-neutral-200);
+
+  --text2-light: var(--clr-primary-900);
+  --text2-dark: var(--clr-primary-100);
+
+  --text3-light: var(--clr-secondary-600);
+  --text3-dark: var(--clr-secondary-500);
+
+  --text4-light: var(--clr-secondary-800);
+  --text4-dark: var(--clr-secondary-400);
+
+  --surface1: var(--surface1-light);
+  --surface2: var(--surface2-light);
+  --surface3: var(--surface3-light);
+  --surface4: var(--surface4-light);
+
+  --text1: var(--text1-light);
+  --text2: var(--text2-light);
+  --text3: var(--text3-light);
+  --text4: var(--text4-light);
+}
+
+/* html {
   font-size: 62.5%;
+} */
+
+@media screen and (prefers-color-scheme=dark){
+  :root {
+    --surface1: var(--surface1-dark);
+    --surface2: var(--surface2-dark);
+    --surface3: var(--surface3-dark);
+    --surface4: var(--surface4-dark);
+    
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+    --text3: var(--text3-dark);
+    --text4: var(--text4-dark);
+  }
+}
+
+[data-theme="light"] {
+  --surface1: var(--surface1-light);
+  --surface2: var(--surface2-light);
+  --surface3: var(--surface3-light);
+  --surface4: var(--surface4-light);
+
+  --text1: var(--text1-light);
+  --text2: var(--text2-light);
+  --text3: var(--text3-light);
+  --text4: var(--text4-light);
+}
+
+[data-theme="dark"] {
+  --surface1: var(--surface1-dark);
+  --surface2: var(--surface2-dark);
+  --surface3: var(--surface3-dark);
+  --surface4: var(--surface4-dark);
+  
+  --text1: var(--text1-dark);
+  --text2: var(--text2-dark);
+  --text3: var(--text3-dark);
+  --text4: var(--text4-dark);
 }
 
 body {
-  margin: 0;
+  background-color: var(--surface1);
+  color: var(--text1);
   font: 300 11px/1.4 'Helvetica Neue',sans-serif;
-  color: #444;
-  background: #022c43;
   overflow: hidden;
-  display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-

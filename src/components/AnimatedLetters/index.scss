@@ -14,13 +14,13 @@
 }
 
 .text-animate-hover {
-    min-width: 10px;
+    min-width: 0.2em;
     display: inline-block;
     animation-fill-mode: both;
 
     &:hover {
         animation: rubberBand 1s;
-        color: #ffd700 ;
+        color: var(--text3) ;
     }
 }
 
